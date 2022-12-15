@@ -2056,12 +2056,19 @@ footer #for-mbl-icons a i {
   .sylish-dress .collection-row {
     gap: 0.4rem;
   }
+  .sylish-dress .collection-row img {
+    margin-top: 0.5rem;
+  }
   .women-footwear .mbl-img img {
     width: 94%;
   }
   .footwear-images {
-    padding: 0 1.2rem 0 0.6rem;
+    padding: 0 1rem 0 0.6rem;
     justify-content: center;
+  }
+  .footwear-images .footwear-img {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
   }
   .footwear-images .footwear-img img {
     margin-top: 0rem;
