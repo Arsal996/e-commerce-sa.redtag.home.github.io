@@ -1,0 +1,94 @@
+@mixin images($par1) {
+    width: 100%;
+    margin-top: $par1;
+    text-align: center;
+    cursor: pointer;
+}
+
+@mixin dropdown {
+
+    display: none;
+    width: 96vw;
+    height: auto;
+    z-index: 10;
+    background-color: $white-clr;
+    border: 1px solid $light-clr;
+    margin: 1rem;
+    
+    .all-lists {
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+        padding-bottom: 4rem;
+    }
+
+    ul {
+        text-align: left;
+        margin-top: 3rem;
+
+        li {
+            list-style: none;
+            padding: .5rem;
+
+            .menu-heading {
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding-bottom: .7rem;
+                display: block;
+
+                &:hover {
+                    color: $red;
+                    font-size: 1.2rem;
+                }
+            }
+
+            a {
+                color: $black-clr;
+                text-decoration: none;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    color: $red;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+}
+
+@mixin single-full-images {
+    text-align: center;
+    display: block;
+    margin-top: 5rem;
+
+    .pc-img {
+        width: 100%;
+
+        img {
+            width: 97%;
+        }
+    }
+
+    .mbl-img {
+        display: none;
+    }
+}
+
+@mixin single-full-images-mbl {
+    margin-top: 2rem;
+
+    .pc-img {
+        display: none;
+    }
+
+    .mbl-img {
+        display: block;
+        text-align: center;
+        
+        img{
+            width: 90%;
+        }
+    }
+}

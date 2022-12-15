@@ -1,0 +1,1550 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Noto+Sans:wght@300;400;600&family=Quicksand:wght@300;500;600&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&family=Ubuntu:wght@300&family=Work+Sans:wght@900&display=swap');
+@import 'function';
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    /* transition: 1s linear; */
+}
+
+$red: #ff0000;
+$white-clr: #fff;
+$black-clr: rgb(0, 0, 0);
+$light-clr: rgb(179, 179, 179);
+
+html {
+    font-size: 75%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white-clr;
+
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin: 4rem 0 2rem 2.5rem;
+    text-align: left;
+    // font-family: Tajawal Bold;
+}
+
+#men-nav-b {
+    margin-left: 14rem;
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white-clr;
+}
+
+.top-head {
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 2%;
+
+    a {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $black-clr;
+
+        span {
+            color: red;
+        }
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 45px;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: $white-clr;
+        border: 2px solid $light-clr;
+
+        input {
+            width: 100%;
+            height: 100%;
+            background: none;
+            font-size: 1.7rem;
+            color: $black-clr;
+            padding: 0 20px;
+            text-transform: none;
+        }
+
+        label {
+            font-size: 2rem;
+            padding: 17px;
+            color: $black-clr;
+            cursor: pointer;
+            transition: 1s;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    .icons-mbl {
+
+        display: none;
+
+        .hide-icons {
+            display: flex;
+
+            a {
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                margin-right: 14px;
+                transition: 0.4s;
+
+                &:hover {
+                    transform: rotate(360deg);
+
+                }
+            }
+        }
+    }
+
+    .icons-pc {
+
+        display: flex;
+
+        a {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            margin-right: 14px;
+            transition: 0.4s;
+
+            &:hover {
+                transform: rotate(360deg);
+
+            }
+        }
+    }
+
+}
+
+// button navbar section css
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: .6rem;
+    gap: 2rem;
+
+    a {
+        width: 12rem;
+        padding: .8rem 1.5rem;
+        font-size: 1.2rem;
+        color: $black-clr;
+        text-align: center;
+        font-weight: 600;
+        background-color: $white-clr;
+        border: 1px solid grey;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: $black-clr;
+            color: $white-clr;
+        }
+    }
+
+    #active {
+        background-color: $black-clr;
+        color: $white-clr;
+    }
+}
+
+
+// dropdown navbar menu css 
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+    margin-top: 2rem;
+    background: rgb(240, 240, 240);
+}
+
+.wrapper .icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.icon:first-child {
+    left: 0;
+    display: none;
+    background: linear-gradient(90deg, rgb(240, 240, 240) 80%, transparent);
+}
+
+.icon:last-child {
+    right: 0;
+    justify-content: flex-end;
+    background: linear-gradient(-90deg, rgb(240, 240, 240) 80%, transparent);
+}
+
+.icon i {
+    width: 45px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 55px;
+    transition: 0.5s;
+}
+
+.icon i:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.icon:first-child i {
+    margin-left: 15px;
+}
+
+.icon:last-child i {
+    margin-right: 20px;
+}
+
+.wrapper .tabs-box {
+    display: flex;
+    gap: 1rem;
+    // justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.tabs-box.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.tabs-box .tab {
+    cursor: pointer;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    padding: 20px 20px;
+    transition: 0.7s ease-in-out;
+
+    a {
+        text-decoration: none;
+        color: #000;
+
+        .fa-angle-down {
+            margin-left: 4px;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    &:hover {
+        background-color: #dfdfdf;
+
+    }
+}
+
+.tabs-box.dragging .tab {
+    user-select: none;
+    pointer-events: none;
+}
+
+#hot-offer {
+    color: $red;
+    font-weight: 600;
+}
+
+#newIn {
+    @include dropdown();
+}
+
+#best-seller {
+    @include dropdown();
+}
+
+#clothing {
+    @include dropdown();
+}
+
+#winter {
+    @include dropdown();
+}
+
+#bedroom {
+    @include dropdown();
+}
+
+#dinning-kitchen {
+    @include dropdown();
+}
+
+#decor {
+    @include dropdown();
+}
+
+#bathroom {
+    @include dropdown();
+}
+
+#travel {
+    @include dropdown();
+}
+
+#ling-kint {
+    @include dropdown();
+}
+
+#premium {
+    @include dropdown();
+}
+
+#plus-size {
+    @include dropdown();
+}
+
+#baby {
+    @include dropdown();
+}
+
+#junior {
+    @include dropdown();
+}
+
+#senior {
+    @include dropdown();
+}
+
+#collection {
+    @include dropdown();
+}
+
+#shoes {
+    @include dropdown();
+}
+
+#accessories {
+    @include dropdown();
+}
+
+#fragrance {
+    @include dropdown();
+}
+
+#hotOffer {
+    @include dropdown();
+}
+
+// main img css 
+
+.main-img {
+    @include images(2rem);
+
+    img {
+        width: 98%;
+        height: 42rem;
+    }
+}
+
+.small-img {
+    @include images(6rem);
+
+    img {
+        width: 100%;
+        height: 8rem;
+    }
+}
+
+#for-mbl {
+    display: none;
+}
+
+// slider css 
+
+.first-slider {
+    margin-top: 6rem;
+
+    .swiper {
+        width: 96%;
+        height: 100%;
+    }
+
+    .swiper-slide img {
+        // display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-button-next {
+        color: $black-clr;
+    }
+
+    .swiper-button-prev {
+        color: #ff0000;
+    }
+}
+
+// duo images css
+
+.duo-images {
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 1rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+// mbl screen slider view css 
+
+.mbl-slider {
+    .swiper {
+        width: 95%;
+        // padding: .4rem;
+
+        .swiper-slide {
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+            p {
+                text-align: left;
+                font-size: 1.3rem;
+                margin: 1rem 0 0 0;
+                font-weight: 600;
+                opacity: 0.8;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+#homeware-img {
+
+    margin: 5rem 0 0 1rem;
+}
+
+// exclusive collectio section css
+
+.excluisve-collection {
+
+    .main-row {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        // margin-top: 1rem;
+        padding: 0 2rem;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .inner-img {
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .inner-img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Other styling elements, that are not necessary for the example */
+
+    .img-wrapper {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}
+
+//  kick off image css 
+
+.kick-off-img {
+    @include single-full-images();
+}
+
+// under kick off image css 
+.style-images {
+    margin-top: 5rem;
+}
+
+.sylish-dress {
+    margin-top: 3rem;
+
+    .collection-row {
+        display: flex;
+        gap: .6rem;
+
+        img {
+            width: 33.3%;
+            margin-top: .7rem
+        }
+    }
+}
+
+.school-essential img {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+// Women footwear section css 
+
+.women-footwear {
+    @include single-full-images();
+}
+
+.footwear-images {
+    margin-top: 4rem;
+
+    .footwear-img {
+        display: flex;
+        gap: .6rem;
+
+        img {
+            width: 33.3%;
+            margin-top: .7rem
+        }
+    }
+}
+
+
+// women plus size css 
+
+.women-plus-size-img {
+    @include single-full-images();
+}
+
+// women move body img 
+
+.move-body-img {
+    @include single-full-images();
+}
+
+// timeless beige img 
+
+.timeless-img {
+    margin-top: 4rem;
+
+    .pc-img img {
+        width: 100%;
+    }
+
+    .mbl-img {
+        width: 100%;
+        display: none;
+    }
+}
+
+.women-nightwear-img {
+    @include single-full-images();
+}
+
+// add to wishlist slider css 
+
+.wishlist-slider {
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 1.1rem;
+
+        .swiper-slide {
+
+            a img {
+                width: 27px;
+                height: 27px;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin-top: 1.7rem;
+                margin-left: .5rem;
+                // font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            h4 {
+                font-size: 1.8rem;
+                margin-left: .4rem;
+                margin-top: .5rem;
+                color: rgb(59, 59, 59);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            a {
+                display: flex;
+                margin-top: .3rem;
+                margin-left: .4rem;
+
+                i {
+                    color: rgb(59, 59, 59);
+                    margin-top: 1.8rem;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    color: rgb(59, 59, 59);
+                    margin-left: .5rem;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: $black-clr;
+            margin-top: -6rem;
+            padding: 0 2rem;
+        }
+    }
+}
+
+
+// reward img css 
+
+.reward-img img {
+    width: 100%;
+    margin-top: 7rem;
+}
+
+// info section css
+
+.info-content {
+    margin-top: 6rem;
+    margin-left: 7rem;
+    width: 85%;
+
+    .main-heading h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        margin-top: 3rem;
+        font-size: 1.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: grey;
+        line-height: 1.7rem;
+        margin-bottom: 1.5rem;
+        word-spacing: .2rem;
+    }
+
+    span {
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        line-height: 2rem;
+    }
+
+    #all-content {
+        display: none;
+
+        h4 {
+            font-size: 3rem;
+            display: block;
+            margin-top: 2.4rem;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: grey;
+            line-height: 1.7rem;
+            margin-bottom: 1.4rem;
+            word-spacing: .2rem;
+        }
+
+        li {
+            margin-top: 1.4rem;
+            font-size: 1.2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: grey;
+            line-height: 1.7rem;
+            margin-bottom: 1.4rem;
+            word-spacing: .2rem;
+        }
+    }
+}
+
+
+
+// footer css 
+
+footer {
+
+    background-color: $black-clr;
+
+    .top-footer {
+        background-color: pink;
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3rem 10%;
+
+        .text-part {
+            width: 50%;
+
+            h2 {
+                display: none;
+            }
+
+            h3 {
+                margin: .5rem 0;
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+        }
+
+        .form-part {
+            width: 50%;
+
+            .email-form {
+                display: flex;
+                margin-top: .7rem;
+
+                input {
+                    width: 80%;
+                    height: 45px;
+                    border-radius: 50px;
+                    background: $white-clr;
+                    font-size: 1.3rem;
+                    color: $black-clr;
+                    padding: 0 20px;
+                    text-transform: none;
+                }
+
+                .sub-btn {
+                    width: 180px;
+                    height: 45px;
+                    text-transform: uppercase;
+                    // position: absolute;
+                    margin-left: -100px;
+                    border-radius: 50px;
+                    background: $black-clr;
+                    font-size: 1.2rem;
+                    color: $white-clr;
+                    padding: 0 20px;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: aliceblue;
+                        color: $black-clr;
+                        border: 2px solid $black-clr;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #for-mbl-icons {
+        display: none;
+
+        a {
+            color: $black-clr;
+            font-size: 1.7rem;
+
+            i {
+                padding: 0 .7rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+
+.main-footer {
+    background-color: $black-clr;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5%;
+    border-bottom: 1px solid grey;
+
+    .footer-data ul {
+        list-style: none;
+
+        .footer-heading {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $white-clr;
+            margin-bottom: 1.4rem;
+            border-bottom: 1px solid rgb(109, 109, 109);
+        }
+
+        li {
+            padding: 1rem 0;
+
+            a {
+                color: $light-clr;
+                padding: 1rem 0;
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .five {
+       
+        a {
+            color: $white-clr;
+            margin: 1.5rem 0;
+            float: right;
+        }
+
+        select {
+            width: 110%;
+            height: 50px;
+            background: none;
+            border-radius: 40px;
+            border: 2px solid $white-clr;
+            color: $white-clr;
+            padding: 1rem 1rem ;
+            font-size: 1.2rem;
+
+            option {
+                height: 50px;
+                background: $black-clr;
+                color: $white-clr;
+                padding: 1rem 2rem 0 0;
+                font-size: 1.2rem;
+            }
+        }
+
+        .call-btn {
+            width: 170px;
+            height: 45px;
+            border: 2px solid $white-clr;
+            text-transform: uppercase;
+            border-radius: 50px;
+            background: $black-clr;
+            font-size: 1rem;
+            color: $white-clr;
+            padding: 0 10px;
+            margin: 200px 0 0 50px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: aliceblue;
+                color: $black-clr;
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+// lower-footer css 
+
+.lower-footer {
+    color: $white-clr;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+
+    .logo-sec {
+        h2 {
+            text-transform: uppercase;
+            font-size: 3rem;
+
+            span {
+                color: $red;
+            }
+        }
+
+        p {
+            color: $light-clr;
+            margin-top: .9rem;
+            font-size: .9rem;
+        }
+    }
+
+    .rights-sec {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: $light-clr;
+    }
+
+    .icons-sec {
+        a {
+            color: $white-clr;
+            font-size: 1.7rem;
+
+            i {
+                padding: 0 1rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+
+
+// media querry
+
+@media only screen and (max-width: 1050px) {
+    footer .top-footer {
+        padding: 3rem 4%;
+    }
+
+    footer .main-footer {
+        flex-wrap: wrap;
+    }
+
+    footer .lower-footer {
+        flex-wrap: wrap;
+    }
+
+    .swiper {
+        .sld-btn-hide {
+            display: none;
+        }
+    }
+    #men-nav-b {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    footer .top-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    footer .top-footer .text-part {
+        width: 100%;
+    }
+
+    footer .top-footer .form-part {
+        width: 90%;
+        margin-left: 4rem;
+    }
+
+    header .top-head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    header .top-head form {
+        width: 90%;
+        margin-top: .5rem;
+        border-radius: 1px;
+        height: 40px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    header .top-head form label {
+        font-size: 1.3rem;
+        padding: 5px 12px;
+    }
+
+    header .lower-head {
+        padding: 0 2rem;
+    }
+
+    footer .main-footer .five .call-btn {
+        margin-top: 2rem;
+    }
+
+    .sylish-dress {
+        margin-top: 1rem;
+        padding: 0 .7rem;
+        margin-left: -0.5rem;
+    }
+
+    .footwear-images {
+        margin-top: 2rem;
+        padding: 0 1rem;
+        margin-left: -0.5rem;
+    }
+
+    .mbl-slider .swiper .swiper-slide p {
+        text-align: center;
+    }
+
+    #wishlist-pagination {
+        display: none;
+    }
+
+    #clothing .all-lists {
+        gap: 5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .main-img img {
+        width: 98%;
+        height: 32rem;
+    }
+
+    .lower-footer .icons-sec {
+        margin-top: 2rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .excluisve-collection .main-row {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .info-content {
+        margin-left: 6rem;
+
+        .main-heading h2 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+
+    .main-img img {
+        width: 98%;
+        height: 27rem;
+    }
+
+    .timeless-img {
+        margin-top: 2rem;
+
+        .pc-img {
+            display: none;
+        }
+
+        .mbl-img {
+            display: block;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .kick-off-img {
+        @include single-full-images-mbl();
+
+    }
+
+    .women-footwear {
+        @include single-full-images-mbl();
+    }
+
+    .women-plus-size-img {
+        @include single-full-images-mbl();
+    }
+
+    .move-body-img {
+        @include single-full-images-mbl();
+    }
+
+    .women-nightwear-img {
+        @include single-full-images-mbl();
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    .top-head .icons-mbl {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 23px;
+
+        .hide-icons a {
+            margin-right: 8px;
+        }
+    }
+
+    .top-head .logo {
+        margin-left: -25rem;
+        font-size: 2.5rem;
+    }
+
+    .main-img img {
+        width: 98%;
+        height: 22rem;
+    }
+
+    header .lower-head {
+        padding: 0 .4rem;
+    }
+
+    .lower-head .menu-btn {
+        gap: 0rem;
+        margin-top: 1rem;
+    }
+
+    .lower-head .menu-btn a {
+        border: none;
+        border-radius: 0px;
+    }
+
+    .top-head .icons-pc {
+        display: none;
+    }
+
+    .menu-btn #active {
+        background-color: $white-clr;
+        color: $black-clr;
+        border-bottom: 3px solid $black-clr;
+    }
+
+    .excluisve-collection .main-row {
+        gap: .7rem;
+        padding: 0 .7rem;
+    }
+
+    footer .top-footer .text-part h3 {
+        display: none;
+    }
+
+    #hide-mbl-f {
+        display: none;
+    }
+
+    footer .top-footer .text-part h2 {
+        display: block;
+        font-size: 2.5rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+
+    footer .top-footer .form-part .email-form {
+        flex-direction: column;
+    }
+
+    footer .top-footer .form-part .email-form input {
+        width: 100%;
+        margin-left: -2rem;
+    }
+
+    footer .top-footer .form-part .email-form .sub-btn {
+        margin-left: -.5rem;
+        margin-top: 1.4rem;
+        width: 85%;
+    }
+
+    .lower-footer .icons-sec {
+        display: none;
+    }
+
+    #for-mbl {
+        margin-top: -4.9rem;
+        display: block;
+        height: 6rem;
+    }
+
+    #for-pc {
+        display: none;
+    }
+
+    .top-footer #for-mbl-icons {
+        display: block;
+    }
+
+    .info-content {
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .top-head .logo {
+        margin-left: -22rem;
+        font-size: 2.5rem;
+    }
+
+    .first-slider {
+        margin-top: 4rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .wishlist-slider {
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+
+            .swiper-slide {
+                p {
+                    font-size: 1.1rem;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
+
+                h4 {
+                    font-size: 1.3rem;
+                    margin-left: 1rem;
+                    margin-top: .7rem;
+                }
+
+                a {
+                    margin-left: 1rem;
+
+                    i {
+                        font-size: 1.1rem;
+                        margin-top: 1.2rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .reward-img img {
+        margin-top: 4rem;
+    }
+
+    .school-essential img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #clothing .all-lists {
+        gap: 2rem;
+    }
+
+    #ling-kint .all-lists {
+        gap: 2rem;
+    }
+
+    #hotOffer .all-lists {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .top-head .logo {
+        margin-left: -19rem;
+        font-size: 2.5rem;
+    }
+
+    header .lower-head {
+        padding: 0;
+    }
+
+    header .lower-head .menu-btn {
+        padding: 0 .5rem;
+    }
+
+    .lower-head .menu-btn a {
+        padding: .7rem 0;
+    }
+
+    .main-img img {
+        height: 19rem;
+        width: 94%;
+    }
+
+    .heading {
+        font-size: 1.3rem;
+        margin-top: 3rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer .main-footer {
+        padding: 1rem 3rem;
+    }
+
+    footer .main-footer .five .call-btn {
+        margin-bottom: 1.5rem;
+    }
+
+    .info-content {
+        margin-left: 4rem;
+        margin-top: 5rem;
+
+        .main-heading h2 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .info-content #all-content {
+        h4 {
+            font-size: 2.6rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-top: 1.8rem;
+        }
+
+        li {
+            margin-top: 1.8rem;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 415px) {
+
+
+    .top-head {
+        padding: 14px 0;
+    }
+
+    .main-img {
+        margin-top: 1.2rem;
+    }
+
+    .wrapper {
+        margin-top: 1.4rem;
+    }
+
+    .top-head .icons-mbl {
+
+        right: 17px;
+
+        .hide-icons a {
+            margin-right: 5px;
+            width: 27px;
+            height: 27px;
+        }
+    }
+
+    .heading {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .first-slider {
+        margin-top: 3.2rem;
+    }
+
+    .duo-images {
+        margin-top: 4.4rem;
+        gap: .5rem;
+    }
+
+    .mbl-slider{
+        margin-top: 3.2rem;
+    }
+
+    .top-footer #for-mbl-icons a i {
+        padding: 0 1rem;
+    }
+
+    .top-head .logo {
+        margin-left: -21rem;
+        font-size: 2.2rem;
+        margin-bottom: -.5rem;
+    }
+
+    .top-head #icons-mbl a {
+        font-size: 2.1rem;
+        // padding: 0 .3rem;
+    }
+
+    .excluisve-collection .main-row {
+        gap: .6rem;
+        padding: 0 .4rem;
+    }
+
+    .kick-off-img .mbl-img img {
+        width: 94%;
+        // margin-top: 0.5rem;
+    }
+
+    .lower-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        #CR-No {
+            display: none;
+        }
+
+        #VAT {
+            display: none;
+        }
+    }
+
+    .sylish-dress {
+       margin-top: -3.5rem;
+
+        .collection-row {
+            gap: .4rem;
+        }
+    }
+
+    .women-footwear .mbl-img img {
+        width: 94%;
+    }
+    
+    .footwear-images{
+        padding: 0 1.2rem 0 .6rem;
+        justify-content: center;
+    }
+    .footwear-images .footwear-img img {
+        margin-top: 0rem;
+    }
+
+    .women-plus-size-img .mbl-img img {
+        width: 94%;
+    }
+
+    .move-body-img .mbl-img img {
+        width: 94%;
+    }
+
+    .women-nightwear-img .mbl-img img {
+        width: 94%;
+    }
+
+    .wishlist-slider .swiper .swiper-slide a img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .reward-img img {
+        margin-top: 2rem;
+    }
+
+    .info-content {
+        margin-left: 3rem;
+        margin-top: 5rem;
+
+        .main-heading h2 {
+            font-size: 4rem;
+        }
+    }
+
+    #clothing .all-lists {
+        gap: 1rem;
+    }
+
+    #hotOffer .all-lists {
+        gap: 1rem;
+    }
+    .main-footer .five select {
+        margin-left: 2rem;
+    }
+    footer .main-footer .five .call-btn{
+        margin-left: 6rem;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .top-head .logo {
+        margin-left: -16rem;
+    }
+    .main-footer .five select {
+        margin-left: 1rem;
+    }
+    footer .main-footer .five .call-btn{
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .top-head {
+        padding: 14px 0;
+    }
+
+    .top-head .icons-mbl {
+        right: 17px;
+    }
+
+    .top-head .logo {
+        margin-left: -14.2rem;
+    }
+
+    .main-img {
+        margin-top: 1.2rem;
+    }
+
+    .wrapper {
+        margin-top: 1.4rem;
+    }
+
+    footer .main-footer {
+        padding: 1 2.2rem;
+    }
+
+    .info-content {
+        margin-left: 2.5rem;
+    }
+
+    .info-content #all-content h4 {
+        font-size: 2.3rem;
+    }
+
+    footer .main-footer .five .call-btn {
+        margin-left: 4rem;
+    }
+    .main-footer .five select {
+        margin-left: .6rem;
+    }
+}

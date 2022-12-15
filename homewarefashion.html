@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link for fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- slider js link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<!-- css link file  -->
+<link rel="stylesheet" href="sass/women1.css">
+    <title>Homeware Fashion</title>
+</head>
+<body>
+
+    <!-- header section  -->
+
+        <header>
+            <div class="top-head">
+                <a href="" class="logo">Redtag<span>.</span> </a>
+                <div class="icons-mbl">
+                    <div class="hide-icons">
+                        <a href="">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#account"
+                                alt="">
+                        </a>
+                        <a href="">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                                alt="">
+                        </a>
+                        <a href="">
+                            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="search" id="search-bar" placeholder="search">
+                    <label for="search-bar" class="fas fa-search"></label>
+                </form>
+
+                <div class="icons-pc">
+                    <a href="/">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#account"
+                            alt="">
+                    </a>
+                    <a href="/">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1654072666#wishlist-inactive"
+                            alt="">
+                    </a>
+                    <a href="/">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/sprite.svg?v=1639407144#shopping-bag"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="lower-head">
+                <div class="menu-btn">
+                    <a class="btn" href="index.html">Women</a>
+                    <a class="btn" href="menfashion.html">Men</a>
+                    <a class="btn" href="girlsfashion.html">Girls</a>
+                    <a class="btn" href="boysfashion.html">Boys</a>
+                    <a id="active" class="btn" href="homewarefashion.html">Homeware</a>
+                </div>
+            </div>
+        </header>
+        
+    <!-- this section have all common data  -->
+     
+    <section id="homewear-f">
+  
+   <!-- dropdown navbar section     -->
+
+        <section class="navbar">
+
+        <nav class="wrapper">
+            <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+            <ul style="justify-content: center;" class="tabs-box">
+                <li onclick="myNewIn()" class="tab">New In
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li onclick="myBestSeller()" class="tab">Best Sellers
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li onclick="myWinter()" class="tab">Winter
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li onclick="myBedroom()" class="tab">Bedroom
+                        <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li onclick="myDinKit()" class="tab">Dining & Kitchen
+                        <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li onclick="myDecor()" class="tab">Home Decor
+                        <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li onclick="myBathroom()" class="tab">Bathroom
+                        <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li onclick="myTravel()" class="tab">Travel
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li id="hot-offer" onclick="myHotOffer()" class="tab">Hot Offers
+                        <i class="fa-solid fa-angle-down"></i>
+                </li>
+            </ul>
+            <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+        </nav>
+
+         <!--nav dropdown items section  -->
+
+         <section class="nav-dropdown">
+
+            <!-- NewIn menu list  -->
+
+            <div id="newIn" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">NEW IN</a></li>
+                        <li><a href="">Bedroom</a></li>
+                        <li><a href="">Bathroom</a></li>
+                        <li><a href="">Home Decor</a></li>
+                        <li><a href="">Dining & Kitchen</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- best seller menu list  -->
+
+            <div id="best-seller" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">BEST SELLER</a></li>
+                        <li><a href="">Bedroom</a></li>
+                        <li><a href="">Bathroom</a></li>
+                        <li><a href="">Home Decor</a></li>
+                        <li><a href="">Dining & Kitchen</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- winter menu list  -->
+
+            <div id="winter" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">WINTER</a></li>
+                        <li><a href="">Blankets</a></li>
+                        <li><a href="">Comforters</a></li>
+                        <li><a href="">Duvet and Duvet Covers</a></li>
+                        <li><a href="">Quilts and Bedspreads</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bedroom menu list  -->
+
+            <div id="bedroom" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">shop all bedroom</a></li>
+                        <li><a href="">New In</a></li>
+                        <li><a href="">Blankets</a></li>
+                        <li><a href="">Comforters</a></li>
+                        <li><a href="">Quilts & Bedspreads</a></li>
+                        <li><a href="">Duvet & Duvet Covers</a></li>
+                        <li><a href="">Flat Sheets</a></li>
+                        <li><a href="">Fitted Sheets</a></li>
+                        <li><a href="">Cushions & Cushions Covers</a></li>
+                        <li><a href="">Pillows & Pillowcases</a></li>
+                        <li><a href="">Curtain & Curtain Rods</a></li>
+                        <li><a href="">Throws</a></li>
+                        <li><a href="">Mattress</a></li>
+                        <li><a href="">Bedroom Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- dinning-kitchen menu list  -->
+
+            <div id="dinning-kitchen" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">shop all dinning & kitchen</a></li>
+                        <li><a href="">New In</a></li>
+                        <li><a href="">Dinner Sets</a></li>
+                        <li><a href="">Crockery</a></li>
+                        <li><a href="">Cookware</a></li>
+                        <li><a href="">Serveware</a></li>
+                        <li><a href="">Baking</a></li>
+                        <li><a href="">Drinkware</a></li>
+                        <li><a href="">Cutlery</a></li>
+                        <li><a href="">Kitchen Accessories</a></li>
+                        <li><a href="">Kitchen Storage</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- home decor menu list  -->
+
+            <div id="decor" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">shop all home decor</a></li>
+                        <li><a href="">New In</a></li>
+                        <li><a href="">Decorative Accessories</a></li>
+                        <li><a href="">Candles & Fragrances</a></li>
+                        <li><a href="">Clocks & Frames</a></li>
+                        <li><a href="">Lighting & Lamps</a></li>
+                        <li><a href="">Mirrors</a></li>
+                        <li><a href="">Plants & Flowers</a></li>
+                        <li><a href="">Sweateshirts & Hoodies</a></li>
+                        <li><a href="">Rugs & Doormats</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- bathroom menu list  -->
+
+            <div id="bathroom" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">shop all bathroom</a></li>
+                        <li><a href="">New In</a></li>
+                        <li><a href="">Bathroom Accessories</a></li>
+                        <li><a href="">Bath Mats</a></li>
+                        <li><a href="">Robes</a></li>
+                        <li><a href="">Storage</a></li>
+                        <li><a href="">Towels</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- travel menu list  -->
+
+            <div id="travel" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">shop all travel</a></li>
+                        <li><a href="">Luggage Trolleys</a></li>
+                        <li><a href="">Travel Bags</a></li>
+                        <li><a href="">Beach Towels</a></li>
+                        <li><a href="">Travel Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- hot offer menu list  -->
+
+            <div id="hotOffer" class="container">
+                <div class="all-lists">
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">shops all sale</a></li>
+                        <li><a href="">Bedroom</a></li>
+                        <li><a href="">Dinning & Kitchen</a></li>
+                        <li><a href="">Home Decor</a></li>
+                        <li><a href="">Bathroom</a></li>
+                        <li><a href="">Luggage</a></li>
+                        <li><a href="">SAR 10</a></li>
+                        <li><a href="">SAR 15</a></li>
+                        <li><a href="">SAR 20</a></li>
+                    </ul>
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">all</a></li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Boys</a></li>
+                        <li><a href="">Girls</a></li>
+                        <li><a href="">Homewear</a></li>
+                    </ul>
+                    <ul class="menu-list">
+                        <li><a class="menu-heading" href="">Buy 2 save more</a></li>
+                        <li><a href="">All</a></li>
+                        <li><a href="">2 FOR 37</a></li>
+                        <li><a href="">2 FOR 49</a></li>
+                        <li><a href="">2 FOR 69</a></li>
+                        <li><a href="">2 FOR 79</a></li>
+                        <li><a href="">2 FOR 89</a></li>
+                    </ul>
+                </div>
+            </div>
+      </section>
+      
+ </section>
+    
+        <!-- images section  -->
+        <section class="img-section">
+           
+            <div class="main-img">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Extra_30_above_250-01_19945a4c-e598-4bfa-afd0-9101a89cddaa.jpg?v=1670234275" alt="">
+            </div>
+    
+            <div class="small-img">
+                <img id="for-mbl" src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Mob_tabby_2147446c-14be-4a9b-88ca-ec34884442e7_1024x1024.jpg?v=1669036482" alt="">
+                <img id="for-pc" src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/tabby_4313b4ce-0781-40f6-9f5c-7038c5ca6b31_1024x1024.jpg?v=1669036480" alt="">
+            </div>
+        </section>
+      
+        <!-- slider section  -->
+    
+        <section class="first-slider">
+            <h2 class="heading">Buy More Save More</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/55_600x.jpg?v=1668064084" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/56_1bfa9550-4f6f-44a0-8fa0-82d9491a8a8f_600x.jpg?v=1668064111" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/57_ce5ba5f4-57d1-4bae-8677-3fdb3a116000_600x.jpg?v=1668064131" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/58_600x.jpg?v=1668064152" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/58_600x.jpg?v=1668064152" alt="">
+                  </div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        
+        <!-- duo-images  -->
+        <section class="duo-images">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Great_Prices_copy_48925700-23e2-486b-b3d7-8014163dc86f_1024x1024.jpg?v=1667482625" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Clearance-09_162ca465-b413-4ad5-85c3-2f1ffef8c84c_1024x1024.jpg?v=1667482645" alt="">
+            </div>
+        </section>
+        
+        <!-- homewear img -->
+        
+        <section class="kick-off-img">
+            <div class="pc-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Bedroom-100_0063bf01-f219-4e34-b12a-5d18c81cf0b8_1800x.jpg?v=1665433372" alt="">
+                </a>
+            </div>
+            <div class="mbl-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Mob_Bedroom_copy_800x.jpg?v=1666179226" alt="">
+                </a>
+            </div>
+        </section>
+
+          <!--  collection image section -->
+
+          <section class="style-images">
+
+            <div class="sylish-dress">
+                <div class="collection-row">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Blankets_b17be065-dc35-4fb9-9433-40df42a4b249_1024x1024.jpg?v=1665433448"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Comforters_8dec163e-a92e-43cd-9632-40f316dea66b_1024x1024.jpg?v=1665552163"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Duvet_Covers_fa4f0ada-6acf-4d0c-b96b-54088f3a068c_1024x1024.jpg?v=1665552181"
+                        alt="">
+                </div>
+
+                <div class="collection-row">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Cushions_Covers_aa76d550-f67d-441b-9ff0-3aca1872013a_1024x1024.jpg?v=1665552209"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Throws_0a937ae9-a535-487f-876f-b4c8e48b3d4f_1024x1024.jpg?v=1665552231"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Curtains_Rods_0390bb22-1aac-4462-9cf6-85a7f5f76b2d_1024x1024.jpg?v=1665552255"
+                        alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- kick off image  -->
+
+        <section class="kick-off-img">
+            <div class="pc-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Home_FIFA-100_1800x.jpg?v=1666939775"
+                        alt="">
+                </a>
+            </div>
+            <div class="mbl-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Mob_Home_FIFA_800x.jpg?v=1666939781"
+                        alt="">
+                </a>
+            </div>
+        </section>
+
+        <!-- dinning & kitchen img  -->
+
+        <section class="women-footwear dinningKitchen">
+            <div class="pc-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Dining_Kitchen-100_4f915798-d4e7-4858-bebd-ce17900ecd70_1800x.jpg?v=1665433735"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="mbl-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Mob_Dining_Kitchen_copy_800x.jpg?v=1666179255"
+                        alt="">
+                </a>
+            </div>
+
+            <!--dinning & kitchen images sectoion -->
+
+            <div class="footwear-images">
+                <div class="footwear-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Dinner_Sets_1024x1024.jpg?v=1665433756"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Crockery_744845ce-c6e8-422d-8e63-2027478586f6_1024x1024.jpg?v=1665434439"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Drinkware_05f298ad-894d-4eb5-aef5-38ab79543704_1024x1024.jpg?v=1665434471"
+                        alt="">
+                </div>
+
+                <div class="footwear-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Servewares_1024x1024.jpg?v=1665433913"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Cookware_1024x1024.jpg?v=1665433941"
+                        alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Kitchen_Accessories_1024x1024.jpg?v=1665434018"
+                        alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- home decor images  -->
+
+        <section class="move-body-img">
+            <div class="pc-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Home_Decor-100_7af3e654-c443-458c-8ab1-7abfdc287867_1800x.jpg?v=1665434548"
+                        alt="">
+                </a>
+            </div>
+            <div class="mbl-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Mob_Home_Decor_copy_800x.jpg?v=1666179273"
+                        alt="">
+                </a>
+            </div>
+        </section>
+
+        <!--home decor images sectoion -->
+
+        <div class="footwear-images">
+            <div class="footwear-img">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Lamps_1024x1024.jpg?v=1665434601"
+                    alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Candles_Fragrances-17_1024x1024.jpg?v=1665434675"
+                    alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Candles_Fragrances-18_1024x1024.jpg?v=1665434755"
+                    alt="">
+            </div>
+
+            <div class="footwear-img">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Artificial_Plants_1024x1024.jpg?v=1665434816"
+                    alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Wall_Decors_1024x1024.jpg?v=1665434909"
+                    alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Rugs_Doormats_1024x1024.jpg?v=1665434954"
+                    alt="">
+            </div>
+        </div>
+
+        <!-- Bathroom image  -->
+
+        <section class="move-body-img">
+            <div class="pc-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Bathroom-100_be531424-77e0-422b-b7aa-8064e5830c39_1800x.jpg?v=1665435021"
+                        alt="">
+                </a>
+            </div>
+            <div class="mbl-img">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Mob_Bathroom_copy_800x.jpg?v=1666179293"
+                        alt="">
+                </a>
+            </div>
+        </section>
+
+        <!--home decor images sectoion -->
+
+        <div class="footwear-images">
+            <div class="footwear-img">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Bathroom_Accessories_1024x1024.jpg?v=1665435067"
+                    alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Towels-24_1024x1024.jpg?v=1665435112"
+                    alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/fc1b16194fa5f57eeb4b70622a3b724f_3f3f6ac7-0b42-42c7-96d1-183c1486a4ec_1024x1024.jpg?v=1665493368"
+                    alt="">
+            </div>
+        </div>
+
+
+        <div class="reward-img">
+            <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/RT_Rewards-100_1024x1024.jpg?v=1661770418"
+                alt="">
+        </div>
+
+        <!-- 2nd images screen slider -->
+
+        <section class="mbl-slider">
+            <div>
+                <h2 class="heading">Shops for your loved ones</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Men_de42b390-769e-4a1c-b6ca-6d2fe4115dfb_600x.jpg?v=1665491074"
+                            alt="">
+                        <p>Men</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Women_c7ef8c84-6f41-481f-b6bc-4f1d749be066_600x.jpg?v=1665491249"
+                            alt="">
+                        <p>Women</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Boys_c3148c7d-aaf4-4ea8-b768-239c7d3a661f_600x.jpg?v=1665491109"
+                            alt="">
+                        <p>Boys</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.shopify.com/s/files/1/0604/1151/1030/files/Home_f0f1a7b3-e811-4363-a543-274c5736d7fd_600x.jpg?v=1665491122"
+                            alt="">
+                        <p>Home</p>
+                    </div>
+                </div>
+                <div id="mblslider-pagination" class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+  </section>
+
+            <!-- footer section  -->
+  
+            <footer>
+                <div class="top-footer">
+                    <div class="text-part">
+                        <h2>Subscribe Today</h2>
+                        <h3>Subscribe to our newsletter</h3>
+                        <p id="hide-mbl-f">Get exclusive access to update. offers and giveways</p>
+                    </div>
+                    <div class="form-part">
+                        <div class="email-form">
+                            <input type="search" id="search-bar" placeholder="Your email address">
+                            <button id="subtu" class="sub-btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <div id="for-mbl-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                         <a href=""><i class="fa-brands fa-twitter"></i></a>
+                         <a href=""><i class="fa-brands fa-facebook"></i></a>
+                         <a href=""><i class="fa-brands fa-youtube"></i></a>
+                     </div>
+                </div>
+    
+    
+                <!-- main section  -->
+    
+                <div class="main-footer">
+                    <div class="footer-data">
+                        <ul class="first">
+                            <li class="footer-heading" >Help & Faq</li>
+                                <li><a href="/">Delivery Policy</a></li>
+                                <li><a href="/">Return & Refund Policy</a></li>
+                                <li><a href="/">Quality Gurantee</a></li>
+                                <li><a href="/">Customer Services</a></li>
+                                <li><a href="/">Privacy Policy</a></li>
+                                <li><a href="/">Size Guides</a></li>
+                                <li><a href="/">Pormontion & Discounts</a></li>
+                                <li><a href="/">Term of Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-data">
+                        <ul  class="Second">
+                            <li class="footer-heading" >My Account</li>
+                                <li><a href="/">Profile</a></li>
+                                <li><a href="/">Track Orders</a></li>
+                                <li><a href="/">Wishlist</a></li>
+                                <li><a href="/">Order History</a></li>
+                                <li><a href="/">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-data">
+                        <ul  class="third">
+                            <li class="footer-heading" >The Company</li>
+                    
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">Careers</a></li>
+                                <li><a href="/">Store Locater</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-data">
+                        <ul class="four">
+                            <li class="footer-heading" >More</li>
+                                <li><a href="/">Rewards</a></li>
+                                <li><a href="/">Online Gift Card info</a></li>
+                                <li><a href="/">Franchise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-data">
+                        <div class="five">
+                            <div class="lang">
+                                <h3><a href="/">English</a></h3>
+                            </div>
+                            <select>
+                              <option value="0">Saudia Arabia (SAR)</option>
+                              <option value="1">United Arab Emirates (AED)</option>
+                              <!-- <option value="2">BMW</option> -->
+                            </select>
+                            <div>
+                                <button class="call-btn">Call-800-304-3113</button>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <hr>
+    
+                <!-- footer end section  -->
+    
+                <div class="lower-footer">
+                    <div class="logo-sec">
+                        <h2>Redtag<span>.</span></h2>
+                        <p>CR/ 2049439309</p>
+                        <p>VAT/ 384929309480003</p>
+                    </div>
+                    <div class="rights-sec">
+                        <p>
+                            &copy; 2022. REDTAG | All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="icons-sec">
+                       <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- javascript custom file -->
+    <script src="js/women.js"></script>
+</body>
+</html>
