@@ -1430,6 +1430,10 @@ footer {
 
         .collection-row {
             gap: .4rem;
+
+            img{
+                margin-top: .5rem;
+            }
         }
     }
 
@@ -1438,8 +1442,12 @@ footer {
     }
     
     .footwear-images{
-        padding: 0 1.2rem 0 .6rem;
+        padding: 0 1rem 0 .6rem;
         justify-content: center;
+    }
+    .footwear-images .footwear-img{
+        margin-top: .5rem;
+        gap: .5rem;
     }
     .footwear-images .footwear-img img {
         margin-top: 0rem;
