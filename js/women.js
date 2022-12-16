@@ -112,6 +112,20 @@ document.addEventListener("mouseup", dragStop);
 
 // nav dropdown menu 
 
+window.onclick = function(event){
+  if(!event.target.matches('.tab'))
+  var dd = document.getElementsByClassName('container');
+
+  for(var i = 0; i < dd.length; i++){
+    var x = dd[i];
+
+    if(x.style.display = "block"){
+      x.style.display = "none";
+    }
+  }
+}
+
+
 function myNewIn() {
   let zero = document.getElementById("newIn");
   if (zero.style.display === "block") {
