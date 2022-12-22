@@ -241,18 +241,20 @@ header {
 
 #newIn {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #newIn .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #newIn ul {
   text-align: left;
@@ -271,32 +273,35 @@ header {
 }
 #newIn ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #newIn ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #newIn ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #best-seller {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #best-seller .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #best-seller ul {
   text-align: left;
@@ -315,32 +320,35 @@ header {
 }
 #best-seller ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #best-seller ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #best-seller ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #clothing {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #clothing .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #clothing ul {
   text-align: left;
@@ -359,32 +367,35 @@ header {
 }
 #clothing ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #clothing ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #clothing ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #winter {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #winter .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #winter ul {
   text-align: left;
@@ -403,32 +414,35 @@ header {
 }
 #winter ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #winter ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #winter ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #bedroom {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #bedroom .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #bedroom ul {
   text-align: left;
@@ -447,32 +461,35 @@ header {
 }
 #bedroom ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #bedroom ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #bedroom ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #dinning-kitchen {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #dinning-kitchen .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #dinning-kitchen ul {
   text-align: left;
@@ -491,32 +508,35 @@ header {
 }
 #dinning-kitchen ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #dinning-kitchen ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #dinning-kitchen ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #decor {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #decor .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #decor ul {
   text-align: left;
@@ -535,32 +555,35 @@ header {
 }
 #decor ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #decor ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #decor ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #bathroom {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #bathroom .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #bathroom ul {
   text-align: left;
@@ -579,32 +602,35 @@ header {
 }
 #bathroom ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #bathroom ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #bathroom ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #travel {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #travel .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #travel ul {
   text-align: left;
@@ -623,32 +649,35 @@ header {
 }
 #travel ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #travel ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #travel ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #ling-kint {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #ling-kint .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #ling-kint ul {
   text-align: left;
@@ -667,32 +696,35 @@ header {
 }
 #ling-kint ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #ling-kint ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #ling-kint ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #premium {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #premium .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #premium ul {
   text-align: left;
@@ -711,32 +743,35 @@ header {
 }
 #premium ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #premium ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #premium ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #plus-size {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #plus-size .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #plus-size ul {
   text-align: left;
@@ -755,32 +790,35 @@ header {
 }
 #plus-size ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #plus-size ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #plus-size ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #baby {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #baby .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #baby ul {
   text-align: left;
@@ -799,32 +837,35 @@ header {
 }
 #baby ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #baby ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #baby ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #junior {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #junior .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #junior ul {
   text-align: left;
@@ -843,32 +884,35 @@ header {
 }
 #junior ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #junior ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #junior ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #senior {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #senior .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #senior ul {
   text-align: left;
@@ -887,32 +931,35 @@ header {
 }
 #senior ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #senior ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #senior ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #collection {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #collection .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #collection ul {
   text-align: left;
@@ -931,32 +978,35 @@ header {
 }
 #collection ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #collection ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #collection ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #shoes {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #shoes .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #shoes ul {
   text-align: left;
@@ -975,32 +1025,35 @@ header {
 }
 #shoes ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #shoes ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #shoes ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #accessories {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #accessories .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #accessories ul {
   text-align: left;
@@ -1019,32 +1072,35 @@ header {
 }
 #accessories ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #accessories ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #accessories ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #fragrance {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #fragrance .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #fragrance ul {
   text-align: left;
@@ -1063,32 +1119,35 @@ header {
 }
 #fragrance ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #fragrance ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #fragrance ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 #hotOffer {
   display: none;
-  width: 96vw;
+  position: absolute;
+  width: 97vw;
   height: auto;
   z-index: 10;
   background-color: #fff;
   border: 1px solid rgb(179, 179, 179);
+  transition: 0.5s;
   margin: 1rem;
 }
 #hotOffer .all-lists {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 #hotOffer ul {
   text-align: left;
@@ -1107,16 +1166,17 @@ header {
 }
 #hotOffer ul li .menu-heading:hover {
   color: #ff0000;
-  font-size: 1.2rem;
+  transform: scale(1.1);
 }
 #hotOffer ul li a {
   color: rgb(0, 0, 0);
+  display: block;
   text-decoration: none;
   transition: 0.4s ease-in-out;
 }
 #hotOffer ul li a:hover {
   color: #ff0000;
-  font-size: 1.1rem;
+  transform: scale(1.1);
 }
 
 .main-img {
